@@ -6,23 +6,21 @@ branches:
 cache:
   directories:
   - node_modules
-install:
-  - npm install
+# install:
+#   - npm install
 
 script:
   - npm run test
-  - npm run build
+  # - npm run build
+  - npm run coverage
 
-after_success:
-  - coverage
-
-deploy:
-  provider: pages
-  keep-history: true
-  skit-cleanup: true
-  github-token: $GITHUB_TOKEN
-  local-dir: ./dist/
-  target-branch: gh-pages
-  verbose: true
-  on:
-    branch: master
+# deploy:
+#   provider: pages
+#   keep-history: true
+#   skit-cleanup: true
+#   github-token: $GITHUB_TOKEN
+#   local-dir: ./dist/
+#   target-branch: gh-pages
+#   verbose: true
+#   on:
+#     branch: master
