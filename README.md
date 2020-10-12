@@ -1,5 +1,7 @@
 # test
 
+[![Build Status](https://www.travis-ci.org/heth80/test1.svg?branch=master)](https://www.travis-ci.org/heth80/test1)
+
 ## Project setup
 ```
 npm install

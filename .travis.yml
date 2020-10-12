@@ -7,9 +7,15 @@ cache:
   directories:
   - node_modules
 install:
-- npm install
+  - npm install
+
 script:
-- npm run build
+  - npm run test
+  - npm run build
+
+after_success:
+  - coverage
+
 deploy:
   provider: pages
   keep-history: true
