@@ -3,16 +3,20 @@ node_js: stable
 branches:
   only:
   - master
-cache: npm
+cache:
+  directories:
+  - node_modules
 install:
 - npm install
 script:
 - npm run build
 deploy:
-    provider: pages
-    keep-history: true
-    skit-cleanup: true
-    github-token: $GITHUB_TOKEN
-    local-dir: ./dist/
-    on:
-      branch: master
+  provider: pages
+  keep-history: true
+  skit-cleanup: true
+  github-token: $GITHUB_TOKEN
+  local-dir: ./dist/
+  target-branch: gh-pages
+  verbose: true
+  on:
+    branch: master
