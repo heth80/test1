@@ -3,7 +3,16 @@ node_js: stable
 branches:
   only:
   - master
+cache: npm
 install:
 - npm install
 script:
 - npm run build
+deploy:
+    provider: pages
+    keep-history: true
+    skit-cleanup: true
+    github-token: $GITHUB_TOKEN
+    local-dir: ./dist/
+    on:
+      branch: master
