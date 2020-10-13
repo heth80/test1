@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 🛎️
-        uses: actions/master
+        uses: actions/checkout@master
         with:
           persist-credentials: false
       
