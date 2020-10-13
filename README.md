@@ -1,6 +1,7 @@
 # test
 
 [![Build Status](https://www.travis-ci.org/heth80/test1.svg?branch=master)](https://www.travis-ci.org/heth80/test1)
+[![codecov](https://codecov.io/gh/heth80/test1/branch/master/graph/badge.svg)](https://codecov.io/gh/heth80/test1)
 
 ## Project setup
 ```
