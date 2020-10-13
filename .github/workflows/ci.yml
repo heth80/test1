@@ -9,15 +9,15 @@ jobs:
         with:
           persist-credentials: false
       
-      # - name: Install and Build 🔧
-      #   run: |
-      #     npm Install
-      #     npm run build
-
+      - name: Install and Build 🔧 
+        run: |
+          npm install
+          npm run build
+  
       - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@master
+        uses: JamesIves/github-pages-deploy-action@3.6.2
         with:
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          BRANCH: gh-pages
-          FOLDER: build
-          BUILD_SCRIPT: npm install && npm run build
+          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          BRANCH: github-pages
+          FOLDER: dist
+          CLEAN: true
