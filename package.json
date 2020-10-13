@@ -16,6 +16,7 @@
     "vue-router": "^4.0.0-0",
     "vuex": "^4.0.0-0"
   },
+  "homepage": "https://heth80.github.io/test1",
   "devDependencies": {
     "@types/jest": "^24.0.19",
     "@typescript-eslint/eslint-plugin": "^2.33.0",
